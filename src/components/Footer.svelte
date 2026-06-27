@@ -64,7 +64,7 @@
         <div class="col-lg-3 col-md-3 footer-intro mb-6">
           <div class="logo mb-15">
             <a href="index.html" class="d-flex align-items-center">
-              <img src="/images/logo/logo.png" alt="Logo" style="height: auto; width: 14rem;" />
+              <img src="/images/logo/logo.PNG" alt="Logo" style="height: auto; width: 14rem;" />
             </a>
             <div class="mt-4">
               <p>{browserVersion}</p>

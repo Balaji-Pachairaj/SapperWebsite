@@ -140,14 +140,14 @@ onDestroy(() => {
   setContext('userContext', userContext);
 
   let mobHeaderLogo = {
-    src: "/images/logo/logo.png",
+    src: "/images/logo/logo.PNG",
     alt: "Kurudhi Logo Image",
     width: "100",
     style: "width: 14rem; height: auto;"
   }
 
   let logoImage = {
-    src: "/images/logo/logo.png",
+    src: "/images/logo/logo.PNG",
     alt: "Kurudhi Logo Image",
     style: "width: 14rem; height: auto; padding-bottom: 7px;"
   };

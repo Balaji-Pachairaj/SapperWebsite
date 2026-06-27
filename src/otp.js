@@ -56,7 +56,7 @@ app.post('/send-otp', async (req, res) => {
                 <tr>
                   <td style="padding: 40px 0px 0px;">
                     <div style="text-align: left;">
-                      <div style="padding-bottom: 20px;"><img style="max-width: 100px;" src="/images/logo/logo.png" alt="Company"
+                      <div style="padding-bottom: 20px;"><img style="max-width: 100px;" src="/images/logo/logo.PNG" alt="Company"
                           style="width: 56px;"></div>
                     </div>
                     <div style="padding: 20px; background-color: rgb(255, 255, 255);">
