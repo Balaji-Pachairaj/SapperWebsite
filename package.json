@@ -70,7 +70,8 @@
     "rollup-plugin-terser": "^7.0.0",
     "sapper": "^0.28.10",
     "svelte": "^3.59.2",
-    "svelte-toast": "^1.0.0"
+    "svelte-toast": "^1.0.0",
+    "vite": "^8.1.0"
   },
   "main": "rollup.config.js",
   "keywords": [],
