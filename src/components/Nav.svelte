@@ -186,7 +186,7 @@ onDestroy(() => {
                 <a class="dropdown-toggle fw-500 text-dark" data-bs-theme="dark" href="/" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                   {getGreeting()}, <span style="color: #333333;
                   text-transform: capitalize;
-                  font-family: 'McLaren';"> {$userContext} </span>
+                  font-family: 'Inter';"> {$userContext} </span>
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="userDropdown">
                   <!-- Add navigation links to profile and dashboard pages -->
@@ -308,7 +308,7 @@ onDestroy(() => {
                   {getGreeting()}, <br> <span style="font-size: 1.5rem;
                   text-transform: capitalize;
                   color: #333333;
-                  font-family: 'McLaren';
+                  font-family: 'Inter';
                   font-weight: 600;"> {$userContext} </span>
                 </a>
                 <ul class="dropdown-menu">
