@@ -20,13 +20,13 @@
     }
   </script>
   
-  <section class="feedback-section-three position-relative mt-170 xl-mt-150 lg-mt-100">
+  <section class="feedback-section-three position-relative mt-170 xl-mt-150 lg-mt-100 mb-100">
     <div class="container position-relative">
       <div class="row">
         <div class="col-xl-6 col-lg-7 col-md-8 m-auto">
           <div class="title-two text-center">
             <img src="images/icon/icon_22.svg" alt="" class="lazy-img me-auto ms-auto mb-10" style="">
-            <h2 class="fw-600 color-blue">Check what our users have to say.</h2>
+            <h2 class="fw-600 color-blue" style="font-size: 1.6rem; line-height: 1.3; letter-spacing: 0.01em;">Check what our users have to say.</h2>
           </div>
         </div>
       </div>
@@ -37,7 +37,7 @@
             <div class="carousel-inner text-center">
               {#each Object.entries(testimonials) as [index, testimonial]}
                 <div class="carousel-item {index == activeTestimonial ? 'active' : ''}" data-bs-interval="1000000">
-                  <p>{testimonial}</p>
+                  <p class="testimonial-text" style="font-size: 1.5rem;">{testimonial}</p>
                 </div>
               {/each}
             </div>
@@ -54,4 +54,3 @@
       </div>
     </div>
   </section>
-  

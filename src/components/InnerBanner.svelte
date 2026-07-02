@@ -13,9 +13,9 @@
         <div class="row">
           <div class="col-xl-8 m-auto text-center">
             <div class="title-two">
-              <h2 class="text-black">{title}</h2>
+              <h2 class="text-black" style="font-size: 2rem; line-height: 1.3;">{title}</h2>
             </div>
-            <ul class="style-none d-flex justify-content-center page-pagination mt-15 text-black">
+            <ul class="style-none d-flex justify-content-center page-pagination mt-15 text-black" style="font-size: 0.95rem;">
               {#each pageLinks as link (link)}
                 <li class="text-black">
                   {#if link.url}
