@@ -1,49 +1,137 @@
 <script>
-  const bannerTitle = "Join the Life Saver Mission Let's Unite to Save Lives";
-  const bannerSubtitle = "Unite with 135 Core Indians to become Life Savers and join the mission of saving lives – a powerful movement of compassion and solidarity.";
+  // Edit copy here without touching the markup below
+  export let bannerImageUrl = '/images/icon-192x192.png';
+  export let horseImageUrl = '/images/kurudhi-hero-horse.png';
+  export let bannerTitle = "Join the Life Saver Mission — Let's Unite to Save Lives";
+  export let bannerSubtitle =
+    'Unite with millions of Indians to become Life Savers and join the mission of saving lives – a powerful movement of compassion and solidarity.';
 </script>
 
+<section class="kh-banner">
+  <div class="kh-banner__bg" style="background-image: url('{bannerImageUrl}')" aria-hidden="true" />
+  <div class="kh-banner__overlay" aria-hidden="true" />
+
+  <div class="kh-banner__inner">
+    <div class="kh-banner__text">
+      <h2 class="kh-banner__title">{bannerTitle}</h2>
+      <p class="kh-banner__subtitle">{bannerSubtitle}</p>
+    </div>
+    <div class="kh-banner__horse">
+      <img src="{horseImageUrl}" alt="Kurudhi horse mascot" />
+    </div>
+  </div>
+
+
+</section>
+
 <style>
-  .fancy-banner-three .banner {
-    font-size: 32px;
-    line-height: 1.3;
+  .kh-banner {
+    position: relative;
+    min-height: 440px;
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+    overflow: hidden;
+  }
+
+  .kh-banner .kh-banner__bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-color: #1a1a1a;
+  }
+
+  .kh-banner .kh-banner__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      100deg,
+      rgba(26, 26, 26, 0.1) 0%,
+      rgba(26, 26, 26, 0.5) 40%,
+      rgba(139, 15, 38, 0.85) 100%
+    );
+  }
+
+  .kh-banner .kh-banner__inner {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .kh-banner .kh-banner__text {
+    max-width: 560px;
+    flex: 1;
+  }
+
+  .kh-banner .kh-banner__title {
+    margin: 0 0 18px;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    font-size: clamp(26px, 3.2vw, 40px);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #ffffff;
   }
-  .fancy-banner-three .text-md {
+
+  .kh-banner .kh-banner__subtitle {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
-    line-height: 1.6;
-    opacity: 0.9;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
   }
-  @media (max-width: 991px) {
-    .fancy-banner-three .banner {
-      font-size: 26px;
+
+  .kh-banner .kh-banner__horse {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .kh-banner .kh-banner__horse img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
+  }
+
+  @media (max-width: 900px) {
+    .kh-banner {
+      min-height: 0;
+      padding: 60px 0;
     }
-    .fancy-banner-three .text-md {
-      font-size: 15px;
+    .kh-banner .kh-banner__inner {
+      padding: 0 32px;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .kh-banner .kh-banner__overlay {
+      background: linear-gradient(
+        180deg,
+        rgba(26, 26, 26, 0.55) 0%,
+        rgba(139, 15, 38, 0.85) 100%
+      );
+    }
+    .kh-banner .kh-banner__text {
+      max-width: 100%;
+    }
+    .kh-banner .kh-banner__horse {
+      max-width: 280px;
     }
   }
-  @media (max-width: 575px) {
-    .fancy-banner-three .banner {
-      font-size: 22px;
+
+  @media (max-width: 560px) {
+    .kh-banner .kh-banner__inner {
+      padding: 0 20px;
     }
   }
 </style>
-
-<section class="fancy-banner-three mt-150 lg-mt-100">
-  <div class="bg-wrapper pt-85 lg-pt-50 pb-80 lg-pb-50 position-relative wow fadeInUp">
-    <div class="container">
-      <div class="row">
-        <div class="col-xxl-5 col-xl-6 col-lg-6 ms-auto">
-          <div class="text-wrapper p0 mb-50 md-mb-20 wow fadeInRight">
-            <div class="title-one mt-25 mb-25 lg-mb-20">
-              <h2 class="text-white main-font banner">{bannerTitle}</h2>
-            </div>
-            <p class="text-white text-md">{bannerSubtitle}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- /.bg-wrapper -->
-</section>
