@@ -19,6 +19,18 @@
 
   import toastr from "toastr";
 
+  onMount(() => {
+  const params = new URLSearchParams(window.location.search);
+
+  inputValue = params.get("city") || "";
+  selectedSuggestion = params.get("city") || null;
+  bloodGroup = params.get("type") || "";
+
+  if (inputValue && bloodGroup) {
+    applyFilter();
+  }
+});
+
 toastr.options = {
   "closeButton": true,
   "debug": false,
@@ -238,7 +250,7 @@ toastr.options = {
 
 <div class="main-page-wrapper">
   <div>
-    <Banner title="Search blood donors near you using a Locaton" />
+    <Banner title="Search blood donors near you using a Location" />
   </div>
 
   <section class="ksd-search-section">

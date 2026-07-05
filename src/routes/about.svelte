@@ -194,7 +194,7 @@
   /* ── HERO ─────────────────────────── */
   .kab-hero {
     position: relative;
-    background: #C8102E;
+    background: linear-gradient(  to bottom,  #FF4400 0%,  #FF4400 90%,  #ff0000 100%);
     color: #fff;
     padding: 120px 0 100px;
     overflow: hidden;
@@ -208,7 +208,7 @@
     font-size: clamp(100px, 18vw, 240px);
     font-weight: 900;
     color: #fff;
-    opacity: 0.10;
+    opacity: 0.20;
     line-height: 1;
     pointer-events: none;
     white-space: nowrap;

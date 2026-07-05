@@ -415,7 +415,7 @@
 
     <div class="kh-btns">
       <a href="/register" class="kh-btn-primary">Register as a Donor</a>
-      <a href="/find" class="kh-btn-secondary">Find a Donor →</a>
+      <a href="/donor/find-local-donor" class="kh-btn-secondary">Find a Donor →</a>
     </div>
 
     <div class="kh-trust">
@@ -456,7 +456,7 @@
       class="kh-search-btn"
       on:click={() => {
         if (selectedType && selectedCity) {
-          window.location.href = `/find?type=${encodeURIComponent(selectedType)}&city=${encodeURIComponent(selectedCity)}`;
+          window.location.href = `/donor/find-local-donor?type=${encodeURIComponent(selectedType)}&city=${encodeURIComponent(selectedCity)}`;
         }
       }}
     >
