@@ -40,10 +40,8 @@
 
   let teamMembers = [
     { name: "Mr. Hajee Sharif", role: "Founder", org: "Kurudhi" },
-    { name: "Mr. Murali Ganesan", role: "Accounts Manager", org: "CURI Hospital" },
-    { name: "Aram Seiya Virumbu Trust", role: "", org: "Non-governmental Organization" },
     { name: "Mr. Arjun", role: "Marketing Specialist", org: "" },
-    { name: "Mr. Raghavan", role: "Website Developer", org: "" },
+    { name: "Mr. Elango", role: "Website Developer", org: "" },
   ];
 
   let stats = [

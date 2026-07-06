@@ -104,11 +104,7 @@
         <a href="index.html" class="kf-logo">
           <img src="/images/logo/logo.PNG" alt="Kurudhi Logo" />
         </a>
-        <div class="kf-meta">
-          <span>{browserVersion}</span>
-          <span class="kf-dot">•</span>
-          <span>{browserLanguage} | {osplatform}</span>
-        </div>
+        
       </div>
 
       <div class="kf-col">
